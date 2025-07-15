@@ -1,2 +1,10 @@
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   NewCops: enable
+
+require:
+  - ./lib/rubocop/cop/foo/bar
+
+Foo/Bar:
+  SafeAutoCorrect: false
